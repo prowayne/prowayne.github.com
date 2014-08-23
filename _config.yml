@@ -1,0 +1,11 @@
+timezone: Asia/Shanghai
+markdown: redcarpet
+permalink: /:categories/:title.html
+url:
+
+paginate: 12
+paginate_path: "page:num"
+
+# personal
+title: Wayne Liu's Blog
+
