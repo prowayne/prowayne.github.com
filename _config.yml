@@ -6,6 +6,5 @@ url:
 paginate: 12
 paginate_path: "page:num"
 
-# personal
-title: Wayne Liu's Blog
+auto: true
 

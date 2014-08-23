@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/bt.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
     {% include top_nav.html %}
     {% include header.html %}
-    <div class="main">
-        <div class="contaiter">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="well">
-                        hello
+    <div class="main container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    hello
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span>分类</span>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <span>分类</span>
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                {% for cate in site.categories %}
-                                <li><a href="/categories.html#{{ cate[0] }}">{{ cate[0] }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for cate in site.categories %}
+                            <li><a href="/categories.html#{{ cate[0] }}">{{ cate[0] }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    {{ content }}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span>最新</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for p in site.posts limit:6 %}
+                            <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-9">
+                {{ content }}
             </div>
         </div>
     </div>
