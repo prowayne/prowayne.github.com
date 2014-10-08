@@ -36,4 +36,6 @@ docker的安装很简单,在ubuntu下运行:
     c = docker.Client(base_url="tcp:dockerhost:5001")
     c.info()
 如果没有出错信息这说明一切ok,可以使用了.
+
+## 
     
