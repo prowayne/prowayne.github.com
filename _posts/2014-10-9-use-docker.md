@@ -80,6 +80,25 @@ container上的文件尽量不修改, 要把代码部署上去可以使用docker
 	
 每次运行不安全的代码,就建立一个container,运行完销毁.基本确保了服务器不会被未知代码损害.
 
+## 将镜像保存到docker-hub上
+和github一样docker有一个dockerhub. 在dockerhub的网站上建立新Repository, 免费的用户可以建立一个私有库,足够了. 可以建立更多的公有库.这里我的用户名是prowayne, 我建立的库叫wayne-dev, :
+
+```
+sudo docker commit -m "提交信息" container_id prowayne/wayne-dev:tag
+sudo docker login
+sudo docker push prowayne/wayne-dev:1.1
+```
+
+在其他机器使用的时候:
+
+```
+sudo docker pull prowayne/wayne-dev:1.1
+````
+
+
+
+end
+
 
 
 
