@@ -93,7 +93,7 @@ sudo docker push prowayne/wayne-dev:1.1
 
 ```
 sudo docker pull prowayne/wayne-dev:1.1
-````
+```
 
 
 
