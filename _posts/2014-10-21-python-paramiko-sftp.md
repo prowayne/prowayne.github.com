@@ -5,12 +5,14 @@ category: python
 ---
 
 ## paramiko
-使用python实现了ssh2协议,安装:
+使用python实现了ssh2协议,[项目地址][1]安装:
 
     sudo pip install paramiko
 
 paramiko可以方便的实现远程主机的管理,这里使用它向远程主机发送或下载文件
     
+[1]:https://github.com/paramiko/paramiko 'paramiko'   
+   
 ## demo
 
 ```
