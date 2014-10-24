@@ -19,11 +19,11 @@ RIPEMD160). 更重要的是使用非常简单
 # 打包
 def pad(data, block_size=16):
     length = block_size - (len(data) % block_size)
-    data += bytes([length])*length
+    data += chr(length)*length
     return data
 # 解包    
 def unpad(data)
-    return data[:-data[-1]]
+    return data[:-ord(data[-1])]
 ```
 
 ### AES
