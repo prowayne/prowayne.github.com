@@ -1,7 +1,7 @@
 --- 
 title: flask-babel i18n,i10n插件
 layout: post
-category: flask
+category: python
 ---
 
 ## 简介
