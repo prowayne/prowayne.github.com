@@ -26,7 +26,7 @@ extensions=jinja2.ext.autoescape,jinja2.ext.with_,webassets.ext.jinja2.AssetsExt
 这样配置文件就好了
 
 ## 模版文件
-在模版文件里{{ _("en") }}这样的表示需要翻译的, 一会儿会自动生成一个message.pot文件里面就是需要翻译的内容. 其实这样{% trans %} en {% endtrans %}也行的, 这样大段文字就比较方便了.
+在模版文件里\{\{ _("en") \}\}这样的表示需要翻译的, 一会儿会自动生成一个message.pot文件里面就是需要翻译的内容. 其实这样\{% trans %\} en \{% endtrans %\}也行的, 这样大段文字就比较方便了.
 
 ## 提取pot文件, 生成po文件,编译成mo文件
 
