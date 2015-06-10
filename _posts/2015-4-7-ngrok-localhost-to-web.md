@@ -26,6 +26,8 @@ openssl req -new -key device.key -subj "/CN=$NGROK_DOMAIN" -out device.csr
 openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000
 
 cp rootCA.pem assets/client/tls/ngrokroot.crt
+# cp device.crt assets/server/tls/snakeoil.crt 
+# cp device.key assets/server/tls/snakeoil.key
 make clean
 make release-server release-client
 ```
@@ -63,6 +65,8 @@ export GOARCH=amd64
 # 去go的安装目录src/
 ./make.bash
 # 然后再去编译环境
+# 把源码文件权限改成当前用户
+# 编译时使用当前用户
 ```
 
 ## 总结
