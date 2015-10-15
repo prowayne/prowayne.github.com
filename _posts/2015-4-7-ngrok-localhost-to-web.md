@@ -52,7 +52,7 @@ test是子域名, 5000是监听的本地端口号, ngrok.cfg内容如下:
 server_addr: "domain.com:4443"
 trust_host_root_certs: false
 ```
-如果是正式的ssl证书trust_host_root_certs:true    
+如果是正式的ssl证书trust_host_root_certs:true; 
 客户端也能用了,现在访问test.domian.com试试吧.
 
 ## 遇到的问题
