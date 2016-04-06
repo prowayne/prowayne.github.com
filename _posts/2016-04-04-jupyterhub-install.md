@@ -4,6 +4,9 @@ layout: post
 category: python
 ---
 
+## 背景
+以前的ipython notebook 深受大家喜爱, 现在 它已经从ipython分离出来改名为jupyter, 但是它主要用在单用户自己的电脑上. 如果想部署给其他人用, 就需要这个项目[jupyterhub github url][1]
+
 ## 准备
 先要安装python3, node
 
@@ -15,8 +18,6 @@ sudo npm install -g configurable-http-proxy
 ```
 
 ## 安装
-
-[jupyterhub github url][1]
 
 ```shell
 sudo pip3 install jupyterhub
