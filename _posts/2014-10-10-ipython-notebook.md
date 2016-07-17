@@ -17,6 +17,14 @@ category: python
 	
 好了, 默认监听的端口是8888,我的服务器地址是10.0.1.172,在浏览器输入10.0.1.172:8888, 这就能用了.
 
+## 现在叫 jupyter
+安装方式`sudo pip isntall jupyter`, 启动 `jupyter nootbook`
+
+默认的配置
+
+* `~/.ipython/profile_default/ipython_kernel_config.py`
+* `~/.jupyter/jupyter_notebook_config.py`
+
 ## 其他问题
 1. 导出html报错  
 No module named pygments.formatters 遇到了500错误
